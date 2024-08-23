@@ -10,11 +10,23 @@
     <script>
        
         let odometroINI = prompt ("digite a marcação do odômetro no começo do dia em km")
+
         let odometroFI = prompt ("Digite a marcação do odometro final")
+        
+        let litrosConsumidos = prompt("Digite quanto você gastou de combustível")
+
         let dinheiroRE= prompt("o valor recebido no dia")
-        let combustivelGA = prompt ("Digite o combustível gasto")
+
+        let combustivelGA = prompt ("Digite o combustível consumido no dia em litros")
         //calculo//
-        let 
+        let kmtotal = odometroINI  - odometroF 
+        let consumoME= kmtotal / combusGA 
+        let custodoCombus = combustivelGA * 4.87 
+        let lucro = dinheiroRE - custodoCombus  
+
+        document.write ("a média gasta do veículo " +consumoME+ " em KM")
+        document.write ("lucro do dia líquido é de " +lucro+ "")
+
 
 
     
