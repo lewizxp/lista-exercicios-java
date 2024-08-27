@@ -10,7 +10,19 @@
     let voltasPE  = prompt ("Digite quantas voltas foram percorridas:")
     let  abastecimentos =  prompt ("Digite o número de abastecimentos feitos")
     let consumoCarro = prompt("Digite o consumo de combustíveldo carro em km")
-    
+    comprimento = parseFloat(comprimento)
+    voltasPE   = parseInt(voltasPe)
+    abastecimentos = parseInt(abastecimentos)
+    consumoCarro = parseFloat (consumoCarro)
+
+    let distanciaPE = comprimento * voltasPE
+    let  distanciaKM = distanciaPE  / 1000
+    let distanciaAbastecimento = distanciaKM / abastetcimento
+    let consumoLitros = distanciaAbastecimento / consumoCarro;
+
+    document.write ("o  número minimo de litros necesaaarioas para o primeiro  abasttecimento é " +consumoLitros+ "em  Litros" )
+
+
 
 
     
