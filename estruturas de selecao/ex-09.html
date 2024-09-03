@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex09</title>
+</head>
+<body>
+   <script>
+      let quantidadeMacas = parseInt(prompt("Digite a quantidade de maçãs:"));
+          let precoPorMaca = parseFloat(prompt("Digite o preço por maçã:"));
+          const descontoPorDuzia = parseFloat(prompt("Digite o valor do desconto por dúzia:"));
+       
+       function calcularValorTotal(quantidade, precoUnitario, descontoDuzia) {
+            let valorTotal = quantidade * precoUnitario;
+       
+            if (quantidade >= 12) {
+              valorTotal -= descontoDuzia;
+              return valorTotal;
+            }
+       
+          
+          }
+          const valorAPagar = calcularValorTotal(quantidadeMacas, precoPorMaca, descontoPorDuzia);
+          document.write("O valor total a ser pago é: R$ ",valorAPagar );
+   </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function04</title>
+</head>
+<body>
+    <script> let numerop = prompt("Digite a potência das Lâmpadas")
+        let largura = prompt ("Digite o largura do cômodo")
+        let comprimento = prompt ("Digite o comprimendo do cômodo") 
+
+        function calcularQuanLampadas(numerop,largura,comprimento){
+
+          let area = largura + comprimento 
+          let quantPotenciaIluminarAmbiente = area * potenciaPorMetro
+          let quantLampadas = quantPotenciaIluminarAmbiente/numerop
+          return quantlampadas
+  
+        } 
+        let quantlampadasTradicional = calcularQuantLampadas(numerop,largura,comprimento)
+        let diferenciaLed = numerop / 7
+        let quantlampadasLed = calcularQuantLampadas(numerop,largura,comprimento,diferencialLed)
+
+        document.write("A quantidade de lâmpadas necessarias " , quantLampadasTradicional)
+        document.write("A quantidade de lâmpadas necessarias " , quantLampadasLed)
+        
+
+        
+        </script>
+    
+</body>
+</html>
