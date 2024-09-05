@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>let maiorN = 0; // Inicializa o maior número com 0
+        let menorN = ; // Inicializa o menor número com infinito
+        let soma = 0; // Inicializa a soma dos números com 0
+        
+        for (let i = 0; i < 50; i++) {
+            let numero = parseInt(prompt("Digite um número positivo:"));
+            
+            // Validação para garantir que o número seja positivo
+            while (numero <= 0) {
+                numero = parseInt(prompt("Número inválido. Digite um número positivo:"));
+            }
+        
+            // Atualiza o maior e o menor número se necessário
+            if (numero > maiorN) {
+                maiorN= numero;
+            }
+            if (numero < menorN) {
+                menorN= numero;
+            }
+        
+            // Acumula a soma dos números
+            soma += numero;
+        }
+        
+        // Calcula a média
+        let media = soma / 50;
+        
+        // Imprime os resultados
+        document.write("O maior número é:", maiorN);
+        document.write("O menor número é:", menorN);
+        document.write("A média dos números é:", media);</script>
+</body>
+</html>
