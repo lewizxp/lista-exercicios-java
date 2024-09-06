@@ -8,8 +8,36 @@
 </head>
 <body>
     <script>
-        let altura = 0
+        let quanthomens
+         let mediaalturaM = 0
+        let menoralt = 0
+        let maioralt = 0
+        let altura = parsefloat(prompt("Digite a altura"))
+        
         let sexo  = prompt("digite o seu sexo")
+
+        for(n=1; n<5;n++){
+
+            if (altura > maioralt) {
+                 maioralt= altura;
+            } 
+            if(altura<menoralt){
+                menoralt = altura
+            }
+             if(sexo ="m"){
+               quanthomens++
+              } else{
+                somaAltura +=altura
+              }
+            }
+            mediaalturaM = somar
+    
+        
+        
+    
+        
+       
+        
     </script>
 </body>
 </html>
